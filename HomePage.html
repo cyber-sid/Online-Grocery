@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shopping</title>
+</head>
+    <link rel="stylesheet" href="HomePage.css">
+    <script src="https://use.fontawesome.com/1e67167605.js"></script>
+    <!-- function for sticky -->
+    <script>
+        function stickyMenu(){
+            var sticky=document.getElementById('sticky');
+            if(window.pageYOffset >220){
+                sticky.classList.add('sticky');
+                }
+            else{
+                sticky.classList.remove('sticky');
+            }    
+        }
+        window.onscroll=function(){
+            stickyMenu();
+        }
+    </script>
+    
+<body>
+    <!-- HEADER  -->
+    <div class="parallax">
+        <div class="pagetitle">Grocery Shop</div>
+    </div>  
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#deals" class="a-menu"><li>Deals</li></a>
+            <a href="#veg" class="a-menu"><li>Vegetables</li></a>
+            <a href="#fruit" class="a-menu"><li>Fruits</li></a>
+            <a href="#meat" class="a-menu"><li>Meats</li></a>
+            <a href="#" class="a-menu"><li><i class="fa fa-shopping-cart"></i></li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search...." name="Search" class="search-input"/>
+                <button type="submit" id="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+      <!--Main WebPage  -->
+      <div class="container">
+          <a href="#veg">
+              <div class="categories">
+                  <img src="Items\Veg\vegetables.jpg" class="item-image">
+                  <div class="image-title">Vegetables</div>
+              </div>
+          </a>
+          <a href="#fruit">
+                <div class="categories">
+                    <img src="Items\Fruits\fruits.webp" class="item-image">
+                    <div class="image-title">Fruits</div>
+                </div>
+            </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="Items\Meat\meats.jpg" class="item-image">
+                <div class="image-title">Meats & Seafood</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="Items\discount.png" class="item-image">
+                <div class="image-title">Deals</div>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
