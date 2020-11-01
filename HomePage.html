@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Shopping</title>
 </head>
-    <link rel="stylesheet" href="HomePage.css">
-    <script src="https://use.fontawesome.com/1e67167605.js"></script>
-    <!-- function for sticky -->
-    <script>
-        function stickyMenu(){
-            var sticky=document.getElementById('sticky');
-            if(window.pageYOffset >220){
-                sticky.classList.add('sticky');
-                }
-            else{
-                sticky.classList.remove('sticky');
-            }    
+<link rel="stylesheet" href="HomePage.css">
+<script src="https://use.fontawesome.com/1e67167605.js"></script>
+<!-- function for sticky -->
+<script>
+    function stickyMenu() {
+        var sticky = document.getElementById('sticky');
+        if (window.pageYOffset > 220) {
+            sticky.classList.add('sticky');
         }
-        window.onscroll=function(){
-            stickyMenu();
+        else {
+            sticky.classList.remove('sticky');
         }
-    </script>
-    
+    }
+    window.onscroll = function () {
+        stickyMenu();
+    }
+</script>
+
 <body>
     <!-- HEADER  -->
     <div class="parallax">
         <div class="pagetitle">Grocery Shop</div>
-    </div>  
+    </div>
     <div class="menu" id="sticky">
         <ul class="menu-ul">
-            <a href="#" class="a-menu"><li>Home</li></a>
-            <a href="#deals" class="a-menu"><li>Deals</li></a>
-            <a href="#veg" class="a-menu"><li>Vegetables</li></a>
-            <a href="#fruit" class="a-menu"><li>Fruits</li></a>
-            <a href="#meat" class="a-menu"><li>Meats</li></a>
-            <a href="#" class="a-menu"><li><i class="fa fa-shopping-cart"></i></li></a>
+            <a href="#" class="a-menu">
+                <li>Home</li>
+            </a>
+            <a href="#deals" class="a-menu">
+                <li>Deals</li>
+            </a>
+            <a href="#veg" class="a-menu">
+                <li>Vegetables</li>
+            </a>
+            <a href="#fruit" class="a-menu">
+                <li>Fruits</li>
+            </a>
+            <a href="#meat" class="a-menu">
+                <li>Meats</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li><i class="fa fa-shopping-cart"></i></li>
+            </a>
         </ul>
         <div class="search-box">
             <form>
-                <input type="text" placeholder="Search...." name="Search" class="search-input"/>
+                <input type="text" placeholder="Search...." name="Search" class="search-input" />
                 <button type="submit" id="search"><i class="fa fa-search"></i></button>
             </form>
         </div>
     </div>
-      <!--Main WebPage  -->
-      <div class="container">
-          <a href="#veg">
-              <div class="categories">
-                  <img src="Items\Veg\vegetables.jpg" class="item-image">
-                  <div class="image-title">Vegetables</div>
-              </div>
-          </a>
-          <a href="#fruit">
-                <div class="categories">
-                    <img src="Items\Fruits\fruits.webp" class="item-image">
-                    <div class="image-title">Fruits</div>
-                </div>
-            </a>
+    <!--Main WebPage  -->
+    <div class="container">
+        <a href="#veg">
+            <div class="categories">
+                <img src="Items\Veg\vegetables.jpg" class="item-image">
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#fruit">
+            <div class="categories">
+                <img src="Items\Fruits\fruits.webp" class="item-image">
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
         <a href="#meat">
             <div class="categories">
                 <img src="Items\Meat\meats.jpg" class="item-image">
@@ -71,6 +84,304 @@
             </div>
         </a>
     </div>
+    <!-- DEALS Section -->
+    <div class="deals-cont" id="deals">
+        <div class="parallax2">
+            <div class="title">DEALS</div>
+        </div>
 
+        <div class="deal">Save upto 20% on min-purchase of 	&#x20B9;300 on Vegetables<br />
+            <button class="cpn-btn">Add Coupon</button>
+        </div>
+
+        <div class="deal">Save upto 25% on min-purchase of 	&#x20B9;200 on Fruits<br />
+            <button class="cpn-btn">Add Coupon</button>
+        </div>
+
+        <div class="deal">Save upto 15% on min-purchase of 	&#x20B9;400 on Meat/SeaFood<br />
+            <button class="cpn-btn">Add Coupon</button>
+        </div>
+    </div>
+    <!-- Veg Section -->
+    <div class="deals-cont" id="veg">
+        <div class="parallax2">
+            <div class="title">VEGETABLES</div>
+        </div>
+
+        <!-- PITATo -->
+
+        <div class="items">
+            <div class="images">
+                <img src="Items\Veg\potato.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Potato</b><br />
+                <div class="item-sel">Price : 	&#x20B9;45/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Brinjal -->
+        <div class="items">
+
+            <div class="images">
+                <img src="Items\Veg\brinjal.jfif" class="item-img">
+            </div>
+            <div class="descri">
+                <b>EggPlant</b><br />
+                <div class="item-sel">Price : 	&#x20B9;30/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Onion -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Veg\onion.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Onion</b><br />
+                <div class="item-sel">Price : 	&#x20B9;40/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Spinach -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Veg\spinach.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Spinach</b><br />
+                <div class="item-sel">Price : 	&#x20B9;30/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Tomato -->
+        <!-- <div class="items">
+            <div class="images">
+                <img src="Items\Veg\tomato.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Toamto</b><br />
+                <div class="item-sel">Price : Rs.15/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+
+        </div> -->
+    </div>
+    <!-- Fruits Section -->
+    <div class="deals-cont" id="fruit">
+        <div class="parallax2">
+            <div class="title">FRUITS</div>
+        </div>
+
+        <!-- PITATo -->
+
+        <div class="items">
+            <div class="images">
+                <img src="Items\Fruits\apple.png" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Apple</b><br />
+                <div class="item-sel">Price : 	&#x20B9;120/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Brinjal -->
+        <div class="items">
+
+            <div class="images">
+                <img src="Items\Fruits\banana.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Banana</b><br />
+                <div class="item-sel">Price : 	&#x20B9;60/dozen</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Onion -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Fruits\kiwi.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Kiwi</b><br />
+                <div class="item-sel">Price : 	&#x20B9;120/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Spinach -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Fruits\stawberry.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Strawberry</b><br />
+                <div class="item-sel">Price : 	&#x20B9;240/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>        
+    </div>
+    <!-- Meats Section -->
+    <!-- ch 240 , fish 420,  gt 600-->
+
+    <div class="deals-cont" id="meat">
+        <div class="parallax2">
+            <div class="title">Meat & SeaFood</div>
+        </div>
+
+        <!-- PITATo -->
+
+        <div class="items">
+            <div class="images">
+                <img src="Items\Meat\tandoori-chicken-meat-500x500.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Chicken</b><br />
+                <div class="item-sel">Price : 	&#x20B9;240/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Brinjal -->
+        <div class="items">
+
+            <div class="images">
+                <img src="Items\Meat\goat.jfif" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Goat</b><br />
+                <div class="item-sel">Price : 	&#x20B9;600/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Onion -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Meat\fish.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <b>Fish</b><br />
+                <div class="item-sel">Price : 	&#x20B9;420/Kg</div>
+                <label>Qty:</label>
+                <select class="item-sel">
+                    <option>250gm</option>
+                    <option>500gm</option>
+                    <option>750gm</option>
+                    <option>1Kg</option>
+                </select><br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>        
+    </div>
+
+    <!-- FOOTER -->
+    <div class="parallax3">
+        <div class="footer">
+            <div class="links">
+                <div>Location</div>
+                <ul>
+                    <li><a href="" class="a-links">Address 1</a></li>
+                    <li><a href="" class="a-links">Address 2</a></li>
+                    <li><a href="" class="a-links">Address 3</a></li>
+                </ul>
+            </div> <div class="links">
+                <div>Carrers</div>
+                <ul>
+                    <li><a href="" class="a-links">Packing Staff</a></li>
+                    <li><a href="" class="a-links">Delivery Agents</a></li>
+                    <li><a href="" class="a-links">Shelf Fillers</a></li>
+                </ul>
+            </div> <div class="links">
+                <div>Quick Links</div>
+                <ul>
+                    <li><a href="" class="a-links">Contact Us</a></li>
+                    <li><a href="" class="a-links">FAQ</a></li>
+                    <li><a href="" class="a-links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="copyrights">
+    &#169;2020 by AKGEC
+</div>
 </body>
+
 </html>
