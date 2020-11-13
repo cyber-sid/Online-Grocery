@@ -3,7 +3,7 @@ body{
 } 
 
 
-/* HEADER */
+/*------- HEADER -----------*/
 
 
 .parallax{
@@ -33,7 +33,7 @@ body{
 }
 
 
-/* NAV Bar Fix On top */
+/*------- NAV Bar Fix On top----------- */
 
 
 .sticky{
@@ -68,7 +68,7 @@ body{
     
 }
 
-/* Search box */
+/* --------Search box -----------*/
 
 .search-box{
     border:1px solid white;
@@ -101,7 +101,7 @@ button{
     outline: none;
 }
 
-/* Container */
+/* -------Container-------- */
 
 .container{
     margin: 50px 50px 50px 5%;
@@ -138,7 +138,7 @@ a{
     text-decoration: none;
 }
 
-/* DEALS */
+/*-------- DEALS---------- */
 .deals-cont{
     text-align: center;
 }
@@ -169,7 +169,7 @@ a{
 .cpn-btn:hover{
     box-shadow: 0 0 10px 5px white inset;
 }
-/* Veges */
+/*-------- Veges----------- */
 .images{
     display: inline-block;
 }
@@ -199,42 +199,75 @@ a{
     box-shadow: 0 0 10px 5px lightgreen inset;
 }
 
-/* Footer */
+/* ------Footer-------- */
 
 .parallax3{
     background-image: url('footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height:max-content;
+
 }
 .footer{
-    background: rgba(0,0,0,0.5);
-    text-align: center;
-    padding: 30px 20px 20px 10px;
+    background: rgba(0,0,0,0.5);    
+    padding: 30px 20px 30px 10px;
+    
 }
 .links{
+    
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
     display: inline-block;
-    min-width: 30%;
+    
 }
 .links ul{
     padding: 0;
-}
-.links li{
-    list-style: none;
-    padding: 10px;
-    font-weight: 300;
+    text-align: left;
 }
 
-.a-links:hover{
-    color: #fd5e53;
-}
 .copyrights{
     font-size: 16px;
     font-family: Verdana, Arial, Arial, Helvetica, sans-serif;
     text-align: center;
-   padding: 15px;
+    padding: 10px;
     background-color: #184d47;
     color: white;
+}
+.links2{
+    display: inline-block;
+    position: absolute;
+    right: 18vw;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    }
+.conform button{
+    color: white;
+    background: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    
+}
+.conform button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px blanchedalmond;
+    
+}
+
+input[type=email]{
+    width: 25.5vw;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 11px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding:5px;
+
+}
+.conform textarea{
+    width:25vw;
+    border-radius: 10px;
+    padding:5px;
 }
