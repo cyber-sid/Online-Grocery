@@ -1,0 +1,253 @@
+body{
+    margin: 
+    0px;
+} 
+
+.pagetitle{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+
+.parallax{
+    background: url('pageheaders.jpg');
+    height:max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    background: url('BG.jpg');
+    height:max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------navbar--- */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header
+{
+    text-align: center;
+    color: black;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+/* MENU CONTENT */
+.menu{
+    background:green;
+    text-align: center;
+
+}
+.menu-ul{
+    margin:0;
+    padding: 0;
+    display: inline;
+}
+.menu-ul li{
+    font-size: 17px;
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 26px 25px;
+}
+.a-menu,.a-links{
+    text-decoration: none;
+    color: white;
+}
+.menu-ul li:hover{
+    background-color: yellowgreen;
+    transform: scale(1.1);
+    
+}
+
+/* --------Search box -----------*/
+
+.search-box{
+    border:1px solid white;
+    border-radius:50px;
+    background:white;
+    width:max-content;
+    display: inline-block;
+    margin: 8px;
+}
+.search-box:hover{
+    box-shadow: 0 0 10px 2px #5b8c5a;
+    
+}
+
+.search-input{
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background:transparent;
+    margin: 2px 0 0 10px;
+}
+#search{
+    font-size: 20px;
+    padding-right: 20px;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* ------Footer-------- */
+
+.parallax3{
+    background-image: url('footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:max-content;
+
+}
+.footer{
+    background: rgba(0,0,0,0.5);    
+    padding: 30px 20px 30px 10px;
+    
+}
+.links{
+    
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    
+}
+.links ul{
+    padding: 0;
+    text-align: left;
+}
+
+.copyrights{
+    font-size: 16px;
+    font-family: Verdana, Arial, Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: #184d47;
+    color: white;
+}
+.links2{
+    display: inline-block;
+    position: absolute;
+    right: 18vw;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    }
+.conform button{
+    color: white;
+    background: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    
+}
+.conform button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px blanchedalmond;
+    
+}
+
+input[type=email]{
+    width: 25.5vw;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 11px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding:5px;
+
+}
+.conform textarea{
+    width:25vw;
+    border-radius: 10px;
+    padding:5px;
+}
+
+/* -----cart table----- */
+
+.small-cont{
+    margin:20px auto 80px auto;
+    
+}
+table{
+    margin-left:80px;
+    width: 80vw;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #044213;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+    font-weight: bolder;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+
+}
+td a{
+    text-decoration: none;
+    color:rgb(238, 12, 12);    
+    border-radius: 40px;
+    font-weight: bolder;
+    
+}
+td a:hover{
+    color: black;
+    box-shadow: 0 0 10px 2px #5b8c5a;
+}
+td img{
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 14vw;
+    padding-bottom: 80px;
+}
+
+.total-price table{
+    border-top: 3px solid  #044213 ;    
+    width:20vw;
+    max-width: 100%;
+    
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
