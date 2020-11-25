@@ -7,7 +7,9 @@
     <title>Grocery Shopping</title>
 </head>
 <link rel="stylesheet" href="HomePage.css">
+<link rel="stylesheet" href="cart.css">
 <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="Cart.js" async></script>
 <!-- function for sticky -->
 <script>
     function stickyMenu() {
@@ -46,16 +48,11 @@
             <a href="#meat" class="a-menu">
                 <li>Drinks</li>
             </a>
-            <a href="cart.html" class="a-menu">
+            <a href="#cart" class="a-menu">
                 <li><i class="fa fa-shopping-cart"></i></li>
             </a>
         </ul>
-        <!-- <div class="search-box">
-            <form>
-                <input type="text" placeholder="Search...." name="Search" class="search-input" />
-                <button type="submit" id="search"><i class="fa fa-search"></i></button>
-            </form>
-        </div> -->
+       
     </div>
     <!--Main WebPage  -->
     <div class="container">
@@ -97,13 +94,10 @@
                 <img src="daily needs\bread.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Bread</b><br />
-                <div class="item-sel">Price : 	&#x20B9;32/packet</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>1packet</option>
-                    
-                </select><br />
+                <div class="name"><b>Bread</b></div>
+                Price :<div class="item-sel">₹32</div>/packet
+                
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -115,13 +109,10 @@
                 <img src="daily needs\butter.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Butter</b><br />
-                <div class="item-sel">Price : 	&#x20B9;51/500gm</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>500gm</option>
-                    <option>1kg</option>
-                </select><br />
+                <div class="name"><b>Butter</b></div>
+                Price :<div class="item-sel"> 	₹51</div>/500gm
+                
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -131,13 +122,9 @@
                 <img src="daily needs\egg.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Eggs</b><br />
-                <div class="item-sel">Price : 	&#x20B9;5/per</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>0.5dozen</option>
-                    <option>1 dozen</option>
-                </select><br />
+                <div class="name"><b>Eggs</b></div>
+                Price :<div class="item-sel"> 	₹5</div>/per
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -147,15 +134,9 @@
                 <img src="daily needs\jam.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Mix Jam</b><br />
-                <div class="item-sel">Price : 	&#x20B9;110/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>1Kg</option>
-                    <option>2Kg</option>
-                    <option>3Kg</option>
-                    <option>4Kg</option>
-                </select><br />
+                <div class="name"><b>Mixed Jam</b></div>
+                Price :<div class="item-sel"> 	₹110</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>        
@@ -166,15 +147,9 @@
             <img src="daily needs\oats.jpg" class="item-img">
         </div>
         <div class="descri">
-            <b>Safolla Oats</b><br />
-            <div class="item-sel">Price : 	&#x20B9;210/Kg</div>
-            <label>Qty:</label>
-            <select class="item-sel">
-                <option>1Kg</option>
-                <option>2Kg</option>
-                <option>3Kg</option>
-                <option>4Kg</option>
-            </select><br />
+            <div class="name"><b>Safolla Oats</b></div>
+            Price : <div class="item-sel">	₹210</div>/Kg
+            <br />
             <button class="buybtn">Buy Now</button>
         </div>
     </div>     
@@ -184,15 +159,9 @@
         <img src="daily needs\peanuts.webp" class="item-img">
     </div>
     <div class="descri">
-        <b>Peanuts</b><br />
-        <div class="item-sel">Price : 	&#x20B9;80/Kg</div>
-        <label>Qty:</label>
-        <select class="item-sel">
-            <option>1Kg</option>
-            <option>2Kg</option>
-            <option>3Kg</option>
-            <option>4Kg</option>
-        </select><br />
+        <div class="name"><b>Peanut</b></div>
+        Price :<div class="item-sel"> ₹80</div>/Kg
+        <br />
         <button class="buybtn">Buy Now</button>
     </div>
     </div>
@@ -214,15 +183,9 @@
                 <img src="Items\Veg\potato.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Potato</b><br />
-                <div class="item-sel">Price : 	&#x20B9;45/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Potato</b></div>
+                Price :<div class="item-sel"> 	₹45</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -234,15 +197,9 @@
                 <img src="Items\Veg\brinjal.jfif" class="item-img">
             </div>
             <div class="descri">
-                <b>EggPlant</b><br />
-                <div class="item-sel">Price : 	&#x20B9;30/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Eggplant</b></div>
+                Price :<div class="item-sel"> 	₹30</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -252,15 +209,9 @@
                 <img src="Items\Veg\onion.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Onion</b><br />
-                <div class="item-sel">Price : 	&#x20B9;40/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Onion</b></div>
+                Price :<div class="item-sel"> 	₹40</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -270,15 +221,9 @@
                 <img src="Items\Veg\spinach.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Spinach</b><br />
-                <div class="item-sel">Price : 	&#x20B9;30/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Spinach</b></div>
+                Price :<div class="item-sel"> ₹30</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -296,15 +241,9 @@
                 <img src="Items\Fruits\apple.png" class="item-img">
             </div>
             <div class="descri">
-                <b>Apple</b><br />
-                <div class="item-sel">Price : 	&#x20B9;120/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Apple</b></div>
+                Price :<div class="item-sel"> ₹120</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -316,15 +255,9 @@
                 <img src="Items\Fruits\banana.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Banana</b><br />
-                <div class="item-sel">Price : 	&#x20B9;60/dozen</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Banana</b></div>
+                Price :<div class="item-sel"> 	₹60</div>/dozen
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -334,15 +267,9 @@
                 <img src="daily needs\pomegranate.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Pomegranate</b><br />
-                <div class="item-sel">Price : 	&#x20B9;200/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Pomegranate</b></div>
+                Price :<div class="item-sel"> ₹200</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -352,15 +279,10 @@
                 <img src="Items\Fruits\stawberry.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Strawberry</b><br />
-                <div class="item-sel">Price : 	&#x20B9;240/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>250gm</option>
-                    <option>500gm</option>
-                    <option>750gm</option>
-                    <option>1Kg</option>
-                </select><br />
+                <div class="name"><b>Strawberry</b></div>
+                
+                Price :<div class="item-sel"> ₹240</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>        
@@ -380,13 +302,9 @@
                 <img src="daily needs\Milk.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Amul Milk</b><br />
-                <div class="item-sel">Price : 	&#x20B9;35/pkt</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>With Cream &#x20B9;40</option>
-                    <option>Without Cream</option>                    
-                </select><br />
+                <div class="name"><b>Milk</b></div>
+                Price :<div class="item-sel"> 	₹35</div>/pkt
+               <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -398,13 +316,9 @@
                 <img src="daily needs\coffee.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Coffee</b><br />
-                <div class="item-sel">Price : 	&#x20B9;400/Kg</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>500gm</option>
-                    <option>1kg</option>                    
-                </select><br />
+                <div class="name"><b>Coffee</b></div>
+                Price :<div class="item-sel"> 	₹400</div>/Kg
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>
@@ -414,19 +328,35 @@
                 <img src="daily needs\drinkscold.jpg" class="item-img">
             </div>
             <div class="descri">
-                <b>Cold Drink</b><br />
-                <div class="item-sel">Price : 	&#x20B9;75/litre</div>
-                <label>Qty:</label>
-                <select class="item-sel">
-                    <option>Coke</option>
-                    <option>Sprite</option>
-                    <option>Pepsi</option>
-                    <option>Mountain Dew</option>
-                </select><br />
+                <div class="name"><b>Cold Drink</b></div>
+                Price :<div class="item-sel">₹75</div>/litre
+                <br />
                 <button class="buybtn">Buy Now</button>
             </div>
         </div>        
     </div>
+<!-- ---------Cart-------- -->
+    <div class="deals-cont" id="cart">
+        <div class="parallax2">
+            <div class="title">YOUR CART <i class="fa fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">₹0</span>
+    </div>
+    <button class="purchase-btn" type="button">PURCHASE</button>
+
+
 
     <!-- FOOTER -->
     <div class="parallax3">

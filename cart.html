@@ -8,6 +8,7 @@
 </head>
 <link rel="stylesheet" href="cart.css">
 <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+<!-- <script src="Cart.js" async></script> -->
 
 <body>
     <div class="parallax">
@@ -48,37 +49,49 @@
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
-            <tr>
-                <td><div class="cart-info">
-                    <img src="Items\Fruits\apple.png" class="item-img">
-                    <div class="item-boxed">
-                        <p>Apple</p>
-                        <small>Price:&#x20B9;120</small>
-                        <p><a href="">Remove</a></p>
+            <div class="cart-items">
+            <tr class= "cart-row">
+                <td>
+                    <div class="cart-info">
+                        <img src="Items\Fruits\apple.png" class="item-img">
+                        <div class="item-boxed">
+                            <p>Apple</p>
+                            <small>Price:&#x20B9;120</small><br>
+                            <button class="remove-btn">Remove</button>
+                        </div>
                     </div>
-                </div></td>
-                <td><input type="number" value="1" ></td>
-                <td style="font-weight: bolder;">&#x20B9;120</td>
+                </td>
+                <td><input type="number" value="1" class="cart-qty"></td>
+                <td style="font-weight: bolder;"class="cart-price">&#x20B9;120</td>
             </tr>
+            <tr class="cart-row">
+                <td>
+                    <div class="cart-info">
+                        <img src="Items\Fruits\banana.jpg" class="item-img">
+                        <div class="item-boxed">
+                            <p>Banana</p>
+                            <small>Price:&#x20B9;60</small><br>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" class="cart-qty"></td>
+                <td style="font-weight: bolder;" class="cart-price">&#x20B9;60</td>
+            </tr>
+            </div>
         
         </table>
     </div>
     <br>
     <div class="total-price">
-        <table>
-            <tr>
-                <td>Subtotal</td>
-                <td>&#x20B9;120</td>
-            </tr>
-            <tr>
-                <td>Tax</td>
-                <td>&#x20B9;25</td>
-            </tr>
-            <tr>
                 <td>Total Amount</td>
-                <td>&#x20B9;145</td>
+                <td class="price-total">&#x20B9;145</td>
             </tr>
         </table>
+    </div>
+
+    <div class="purchase-btn">
+        <button>Buy Now</button>
     </div>
 
     <!-- FOOTER -->
